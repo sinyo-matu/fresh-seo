@@ -23,7 +23,7 @@ async function createSitemap(url: string) {
   const routesDirectory = resolve("./routes");
 
   const destination = join(routesDirectory, "sitemap.xml.ts");
-  
+
   await ensureFile(destination);
 
   const stub = `import { Handlers } from "$fresh/server.ts";
